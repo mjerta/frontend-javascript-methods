@@ -40,8 +40,9 @@ console.log(story.includes("Fantastisch"));
 /* Opdracht 5 */
 // Knip de vraag van bovenstaande tekst (story) af, zodat alleen het eerste gedeelte overblijft en log dit in de terminal.
 // ---- Verwachte uitkomst: "We vinden de behaalde resultaten werkelijk prachtig."
-const arrStory = story.split(" ",7)
-console.log(arrStory.join(" "));
+const lastPartSentence = story.lastIndexOf(".");
+const sentence = story.substring(0, lastPartSentence + 1);
+console.log(sentence)
 
 /* Opdracht 6 */
 // Maak van onderstaand bedrag een Nederlands bedrag door het volgende te doen:
